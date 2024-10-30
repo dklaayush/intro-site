@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: right;
+    letter-spacing: 2px;
+    display: block;
+}
+
+.topNavBar {
+    overflow: hidden;
+}
+
+.topNavBar .linkedIn {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.linkedIn:hover {
+    color: magenta;
+}
+
+.linkedIn::before {
+    content: "";
+    position: absolute;
+    background-color: blue;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.linkedIn:hover::before {
+    width: 100%;
+}
+
+.firstPage {
+    background-image: url(back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.otherInfo {
+    display: block;
+    font-size: 25px;
+}
+
+.hajurba {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40vh;
+    color: wheat;
+    text-align: center;
+}
+
+.skilll {
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+}
+
+.nameIntro {
+    font-size: 40px;
+}
+
+.spacebar {
+    width: 100%;
+    height: 10px;
+    background-color: rgb(63, 62, 62);
+}
+
+.barGraphContainer {
+    position: relative;
+    align-items: center;
+    width: 800px;
+    padding: 10px 20px;
+    left: 20%;
+    top: 10%;
+}
+
+.barGraphContainer .skill-box {
+    padding: 10px 20px;
+    margin: 25px 0;
+}
+
+.skill-box .title {
+    font-size: 15px;
+    font-size: 600;
+    color: white !important;
+    color: rgb(0, 0, 0);
+}
+
+.skill-box .skill-bar {
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.skill-bar .skill-per {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background: rgb(1, 193, 226);
+    animation: progress 5.4s ease-in-out forwards infinite;
+    opacity: 0;
+}
+
+.tooltip {
+    color: white !important;
+    color: rgb(0, 0, 0);
+    position: relative;
+    right: -750px;
+    top: -20px;
+}
+
+.skill-per.css {
+    width: 70%;
+    animation-delay: 0.15s;
+}
+
+.skill-per.html {
+    width: 90%;
+    animation-delay: .2s;
+}
+
+.skill-per.javascript {
+    width: 40%;
+    animation-delay: 0.30s;
+}
+
+.skill-per.node-js {
+    width: 10%;
+    animation-delay: 0.4s;
+}
+
+@keyframes progress {
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.AboutMeH1 {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.secondPage {
+    background-color: rgb(8, 8, 9);
+    height: 100vh;
+    width: 100%;
+}
+
+.thirdPage {
+    height: 100vh;
+    width: 100%;
+    color: black;
+    background-color: rgb(8, 8, 9);
+}
+
+.aboutMeContainer {
+    margin-top: 40px;
+    height: 400px;
+    width: 320px;
+    margin-left: 12vw;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-image: url(stoic.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    color: whhite;
+}
+
+.experienceInfoBox {
+    border: 2px solid rgb(255, 255, 255);
+    width: 320px;
+    height: 150px;
+    margin-left: 12vw;
+    margin-top: 40px;
+    border-radius: 15px;
+    padding: 10px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    color: white;
+}
+
+.educationInfoBox {
+    border: 2px solid rgb(255, 255, 255);
+    width: 320px;
+    height: 150px;
+    margin-top: 40px;
+    margin-left: 50px;
+    border-radius: 15px;
+    color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    color: wheat;
+}
+
+.educationInfoBox:hover {
+    border: 2px solid green;
+}
+
+.aboutMeInfo {
+    border: 2px solid rgb(237, 226, 226);
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70vw;
+    padding: 20px;
+    gap: 5vw;
+    justify-content: center;
+    color: wheat;
+}
+
+.credentials {
+    display: flex;
+    flex-direction: row;
+}
+
+.fa-school {
+    font-size: 30px;
+}
+
+.smaller {
+    font-family: sans-serif;
+}
+
+.writings {
+    border: 2px white;
+    width: 40vw;
+    margin-left: 100px;
+}
+
+.fourthPage {
+    height: 100vh;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(8, 8, 9);
+}
+
+.ProjectsH1 {
+    text-align: center;
+    padding-top: 70px;
+}
+
+.contactH1 {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.fifthPage {
+    height: 100vh;
+    width: 100%;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.fifthContainer {
+    width: 100%;
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+}
+
+.formArea {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+input {
+    height: 55px;
+    width: 520px;
+    padding: 2px 10px;
+    border: 2px solid black;
+}
+
+input:hover {
+    transform: scale(1.03);
+    transition: ease-in-out;
+}
+
+.writingArea {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    max-width: 45%;
+}
+
+.Getinthere {
+    height: 35px;
+    width: 250px;
+    margin-top: 30px;
+    margin-left: 130px;
+    background-color: rgb(10, 115, 167);
+    border: none;
+    padding: 0 20px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.Getinthere:hover {
+    transform: scale(1.04);
+    background-color: rgb(9, 159, 235);
+}
+
+.bigWriting {
+    font-size: 45px;
+}
+
+.newbieWriting {
+    padding-top: 20px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Callme {
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.followMeON {
+    font-weight: bolder;
+    font-size: 19px;
+}
+
+#Description {
+    height: 150px;
+    padding-top: 0;
+    text-wrap: wrap;
+}
+
+.phoneNo {
+    padding-bottom: 20px;
+}
+
+.projectContainer {
+    height: 60vh;
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    position: relative;
+    top: -30px;
+    margin-left: 20px;
+}
+
+.proj1 {
+    height: 300px;
+    width: 24%;
+    background-image: url(gym.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    border: none;
+}
+
+.proj2 {
+    height: 300px;
+    width: 24%;
+    background-image: url(online.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    border: none;
+}
+
+.proj3 {
+    height: 300px;
+    width: 24%;
+    background-image: url(Snake_OG-logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    border: none;
+}
+
+.INfotech {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: -20px;
+}
+
+.paragraphDescription {
+    width: 22%;
+    text-align: center;
+}
+
+.ForMoreProjects {
+    width: 350px;
+    height: 40px;
+    background-color: rgb(10, 115, 167);
+    border: none;
+    padding: 0 20px;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 35px;
+    color: black !important;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.ForMoreProjects:hover {
+    transform: scale(1.04);
+    background-color: rgb(9, 159, 235);
+}
+
+.ForMoreProjects a {
+    text-decoration: none;
+}
